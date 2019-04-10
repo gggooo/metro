@@ -1,0 +1,151 @@
+## 标题
+在想要设置为标题的文字前面加#来表示
+一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。
+```
+# 这是一级标题
+## 这是二级标题
+### 这是三级标题
+#### 这是四级标题
+##### 这是五级标题
+###### 这是六级标题
+```
+
+## 字体
+**这是加粗的文字**
+*这是倾斜的文字*`
+***这是斜体加粗的文字***
+~~这是加删除线的文字~~
+```
+**这是加粗的文字**
+*这是倾斜的文字*`
+***这是斜体加粗的文字***
+~~这是加删除线的文字~~
+```
+
+## 引用
+在引用的文字前加>即可。引用也可以嵌套，如加两个>>三个>>>
+n个...
+貌似可以一直加下去，但没神马卵用
+```
+>这是引用的内容
+>>这是引用的内容
+>>>>>>>>>>这是引用的内容
+```
+
+## 分割线
+三个*。
+***
+```
+***
+```
+
+## 图片
+![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
+```
+![图片alt](图片地址 ''图片title'')
+eg: ![blockchain](https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/
+u=702257389,1274025419&fm=27&gp=0.jpg "区块链")
+```
+
+## 超链接
+[简书](http://jianshu.com)
+[MD语法1](https://www.jianshu.com/p/191d1e21f7ed)
+[MD语法2](https://blog.csdn.net/u014061630/article/details/81359144)
+[百度](http://baidu.com)
+```
+[超链接名](超链接地址 "超链接title")
+title可加可不加
+eg:
+[简书](http://jianshu.com)
+[百度](http://baidu.com)
+```
+
+## 列表
+* 无序列表
+
+```
+* 列表内容
+```
+* 有序列表
+
+## 表格
+姓名|技能|排行
+--|:--:|--:
+刘备|哭|大哥
+关羽|打|二哥
+张飞|骂|三弟
+
+```
+eg:
+姓名|技能|排行
+--|:--:|--:
+刘备|哭|大哥
+关羽|打|二哥
+张飞|骂|三弟
+```
+
+## 代码
+
+* 单行代码：代码之间分别用一个反引号包起来
+* 代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行
+```
+eg:
+`xxxx`
+```
+
+## 流程图
+``` flow
+st=>start: 开始
+op=>operation: My Operation
+cond=>condition: Yes or No?
+e=>end
+st->op->cond
+cond(yes)->e
+cond(no)->op
+&```
+
+## emoji
+:100: :tomato:
+
+find more emoji in [emoji](https://cdn.bootcss.com/docsify/4.9.1/plugins/emoji.js)
+```
+:100: :tomato:
+```
+
+## Todo 列表
+- [ ] xx
+- [x] yy
+```
+ - [ ] xx
+ - [x] yy
+```
+
+## 序列图
+``` seq
+Alice->Bib:line
+Bib->Alice:line2
+```
+
+## 文件嵌入
+docsify 4.6 开始支持嵌入任何类型的文件到文档里。你可以将文件当成 iframe、video、audio 或者 code block，如果是 Markdown 文件，甚至可以直接插入到当前文档里。
+
+[filename](qianru.md ':include')
+
+[markdown](qianru.md ':include :type=code')
+
+[cinwell website](https://cinwell.com ' :include :type=iframe width=100% height=400px')
+
+[mp3](2.mp4 ':include :type=audio')
+
+[mp4](2.mp4 ':include :type=video')
+
+
+```
+[filename](qianru.md ':include')
+[markdown](qianru.md ':include :type=code')
+[cinwell website](https://cinwell.com ' :include :type=iframe width=100% height=400px')
+[mp3](1.mp3 ':include :type=audio')
+[mp4](2.mp4 ':include :type=video')
+
+
+```
